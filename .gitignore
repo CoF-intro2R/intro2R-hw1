@@ -20,6 +20,8 @@
 
 # RStudio files
 .Rproj.user/
+myintro2R-hw1.Rproj
+
 
 # produced vignettes
 vignettes/*.html
