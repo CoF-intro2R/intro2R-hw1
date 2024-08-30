@@ -1,0 +1,24 @@
+name: Autograding
+
+on:
+  push: {}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install dependencies
+        run: |
+          python -m pip install pytest
+
+      - name: Run tests
+        run: |
+          python test_grade.py
+
+      - uses: education/autograding@v1
+        with:
+          # Configure autograding tests
+          autograding-config: tests.json
