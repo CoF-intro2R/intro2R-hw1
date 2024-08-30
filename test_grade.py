@@ -10,7 +10,7 @@ def test_dir_struc():
   assert os.path.isfile("R/hw1.R")
   assert os.path.isfile("Figures/sample_hist.png")
 
-def uses_rel_path():
+def test_rel_path():
   if os.path.isfile("R/hw1.R"):
     
     with open("R/hw1.R", 'r') as script:
@@ -26,4 +26,7 @@ def uses_rel_path():
     res = bool(match1) | bool(match2)
     
     assert res == True
+  
+  else:
+    assert True == False
   

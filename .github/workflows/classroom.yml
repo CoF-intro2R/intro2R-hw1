@@ -19,6 +19,3 @@ jobs:
           python test_grade.py
 
       - uses: education/autograding@v1
-        with:
-          # Configure autograding tests
-          autograding-config: tests.json
