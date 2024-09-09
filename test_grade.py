@@ -17,7 +17,7 @@ def test_rel_path():
       content = script.read()
       
     # search for the specific line
-    line = re.search(r'filename\s*=\s*["\'](.+?)["\']', content).group(0)
+    line = re.search(r'filename\s*=\s*.+', content).group(0)
     
     # check if either here or relative paths are used
     match1 = re.search(r'filename\s*=\s*["\']Figures', line)
