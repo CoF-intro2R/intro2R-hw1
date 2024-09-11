@@ -6,15 +6,15 @@ This first assignment will just have you practice what we learned in class the f
 
 2) Add two directories to your repo:
 
-  - One directory should be called `/R`.
+  - One directory should be called `R`.
   
-  - The other directory should be called `/Figures`.
+  - The other directory should be called `Figures`.
   
 3) Commit the changes from step 2 and use the following commit message:
 
-> Project organization. Added directories /R and /Figures.
+> Project organization. Added directories R and Figures.
 
-4) Add a new R script to the `/R` directory. Name this script `hw1.R`. Open the script using RStudio.
+4) Add a new R script to the `R` directory. Name this script `hw1.R`. Open the script using RStudio.
 
 5) Add the following lines to the script:
 
@@ -26,7 +26,7 @@ x <- rnorm(100)
 hist(x)
 ```
 
-6) Finally, add the following lines to the script, **but be sure to edit the code supplied to the `filename` argument**. Name the file `sample_hist.png` and have it save to the `/Figures` directory. Be sure to use the `here()` function from package `here`, using the `::` notation.
+6) Finally, add the following lines to the script, **but be sure to edit the code supplied to the `filename` argument**. Name the file `sample_hist.png` and have it save to the `Figures` directory. Be sure to use the `here()` function from package `here`, using the `::` notation.
 
 ```r
 png(
@@ -41,11 +41,11 @@ png(
 dev.off()
 ```
 
-7) Run your script and double check that there is an image of a histogram saved in the `/Figures` directory.
+7) Run your script and double check that there is an image of a histogram saved in the `Figures` directory.
 
 8) Commit the changes from steps 4-7 and add the following commit message:
 
-> Added R script /R/hw1.R and ran it, producing an image of a histogram saved to `/Figures/sample_hist.png`.
+> Added R script R/hw1.R and ran it, producing an image of a histogram saved to `Figures/sample_hist.png`.
 
 9) Push your changes up to the remote.
 
